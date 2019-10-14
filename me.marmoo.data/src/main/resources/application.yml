@@ -1,0 +1,20 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /
+
+
+hikari:
+  url: jdbc:mysql://localhost:3306/distributeMall?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+  username: root
+  password: Bendan120!
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  table:
+    auto: update
+  model:
+    pack: me.marmoo.common.domain
+  database:
+    type: mysql
+  mapper-locations: classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml
