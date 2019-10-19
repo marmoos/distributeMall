@@ -1,0 +1,12 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /
+
+marmoo:
+  first:
+    prefix: cool
+    suffix: nice
+spring:
+  banner:
+    location: banner.txt
