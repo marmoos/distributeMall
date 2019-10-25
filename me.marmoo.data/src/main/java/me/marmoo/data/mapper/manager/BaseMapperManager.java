@@ -9,7 +9,7 @@ import java.io.Serializable;
 public interface BaseMapperManager<T,PK extends Serializable> {
 
     @Select("select * from #{tableName} where id =#{id}")
-    public T getOneByPK(String tableName,PK id);
+    public T getOneByPKImpl(String tableName,PK id);
 
 
 }

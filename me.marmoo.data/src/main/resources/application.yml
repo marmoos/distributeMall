@@ -18,3 +18,15 @@ mybatis:
   database:
     type: mysql
   mapper-locations: classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml
+redis:
+  password: 123456
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:123456@114.55.64.54:27017/distributePo
+  #      host: 114.55.64.54
+#      port: 27017
+#      password: 123456
+#      username: admin
+#     # authentication-database: distributePo
+#      database: distributePo

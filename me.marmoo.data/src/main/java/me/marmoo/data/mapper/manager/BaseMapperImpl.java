@@ -33,7 +33,7 @@ public class BaseMapperImpl<T,PK extends Serializable> implements BaseMapper<T,P
         getClazz();
         String tableName=clazz.getName();
         System.out.println(tableName);
-        mapperManager.getOneByPK(tableName,id);
+        mapperManager.getOneByPKImpl(tableName,id);
         return null;
     }
 }
